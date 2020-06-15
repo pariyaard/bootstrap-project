@@ -1,0 +1,123 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Heebo:wght@300&display=swap');
+ 
+body{
+    /*font-family: 'Baloo 2', cursive;*/
+    font-family: 'Heebo', sans-serif;
+  
+}
+
+.logo{
+    height: 10vh;
+}
+.logo img {
+    height: 4vh;
+}
+.navigatie_boven a{
+    font-size: 1.3rem;
+    color: #6A6A6A;
+}
+.navigatie_boven a:link, a:active, a:visited{
+    color: #6A6A6A;
+}
+.navigatie_boven a:hover{
+    color:#51B6E7;
+}
+.tekst1 h1{
+    font-size: 4rem;
+}
+.test-1 p{
+    font-size: 1.3rem;
+    color: #6A6A6A;
+}
+.button-blauw{
+    background-color: #51B9E7;
+    font-size: 1.5rem;
+    border-radius: 80vw;
+}
+.box-shadow--16dp{
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12),
+        0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+.item-huren {
+    background-color: #e8e7e7e;
+}
+.item-jumbo {
+    border-radius: 2vw;
+     background-color: #51B9E7;
+}
+.item-jumbo h1{
+    color: #FFFFFF;
+}
+.item-cijfers p {
+    color: #FFA500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.item-tekst-banner p {
+    color: #FFFFFF;
+    font-size: .8rem;
+    text-align: center;
+}
+.button-orange {
+   background-color:#FFA500;
+   font-size: 1rem; 
+    border-color: #FFFFFF;
+    border-radius: 80vw;
+}
+
+.icon {
+    width:5vh;
+}
+.modal-stijlen {
+    background-color:#51B6E7;
+}
+#categorie option {
+    width: 20vw;
+}
+.stijl-header{
+  background-color:#51B6E7;
+  color: white;
+}
+.modal-title{
+color:#FFA500; 
+font-size:2rem;
+}
+
+blockquote p{
+ font-size:2rem;   
+}
+.button-blue{
+      background-color:#51B9E7;
+   font-size: 1rem; 
+    border-color: #FFFFFF;
+    border-radius: 80vw;
+}
+.kleinetekst{
+    color: #FFFFFF;
+    font-size: .8rem;
+    text-align: center;
+}
+.item-jumbo2{
+     border-radius: 2vw;
+     background-color: #FFA500;
+}
+
+.item-jumbo2 h1{
+    color: #FFFFFF;
+}
+
+
+
+
+.menu{
+  
+    color: #6A6A6A;
+}
+.menu a:link, a:active, a:visited{
+    color: #6A6A6A;
+}
+.menu a:hover{
+    color:#51B6E7;
+}
+

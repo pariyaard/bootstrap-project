@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="language" content="NL">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Op zoek naar een baan">
+  <meta name="author" content="Pariya Derakhshan">
+  <meta name="keywords" content="Bootstrap, pagina, banen, jobs, ict, corona, html, css">
+  <title>opdracht 4.5 </title>
+<!-- Stylesheet bootstrap koppelen -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Stylesheet voor overig koppelen -->
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body class="container mt-3">
+<!--
+    <header class="row w-100 h-100 align-items-center ">
+        <article class="col-md-2 pt-3 logo">
+	        <img src="images/logo_vindennn.png" alt="Logo van vindennn"/>
+	    </article>
+        <nav class="nav col-md-10 d-flex justify-content-end navigatie_boven">
+            <a class="nav-link" href="#">Alle Jobs</a>
+            <a class="nav-link" href="#">Zoek een Job</a>
+            <a class="nav-link" href="#">Plaats een Job</a>
+            <a class="nav-link ml-5" href="#">&#128269;</a>
+            <a class="nav-link ml-2" href="#">&#x1F464;</a>
+        </nav>
+</header>
+-->
+<!-- responsive menu opdracht 4.5 -->
+<header class="row w-100 align-items-center item-header-mobile">
+	<article class="col-sm-2 pt-3 logo"><img src="images/logo_vindennn.png" alt="Logo van vindennn"/></article>
+	<nav class="d-block col-sm-10 navbar navbar-expand-md navbar-light navigatie_boven item-hb">
+			<button style="position: fixed; top: 1vh; right: 2vw; "class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigatie" aria-controls="navigatie" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+		<div class="collapse navbar-collapse navigatie_boven" id="navigatie">
+			<ul class="col-sm-12 navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end">
+			<li>
+			<a class="nav-link" href="#">Alle Jobs</a>
+			</li>
+			<li> <a class="nav-link" href="#">Zoek een Job</a></li>
+           <li> <a class="nav-link" href="#">Plaats een Job</a> </li>
+            <li> <a class="nav-link d-md-none" href="#">Contact</a> </li>
+           <li> <a class="nav-link ml-5 d-none d-md-block" href="#">&#128269;</a></li>
+            <li><a class="nav-link ml-2 d-none d-md-block" href="#">&#x1F464;</a></li>
+			</ul>
+		</div>
+
+	</nav>
+</header>
+
+
+
+
+<main class="mt-5">
+<!-- opdracht 1.1-->
+    <section class="row justify-content-center align-items-center">
+		<article class="col-md-6 test-1">
+        	<h1 class="d-none d-lg-block">Vindt Jouw Beste Remote Job</h1>
+        	<h3 class="d-lg-none">Vindt Jouw Beste Remote Job</h3>
+   
+            <p class="mt-4">
+                Na het uitbreiden van het coronavirus zijn veel mensen op
+                zoek naar jobs die vanuit huis uitgevoerd kunnen worden. Ook
+                opdrachtgevers willen de opdrachten graag outsourcen. Hier 
+                is de oplossing.
+            </p>
+            <button type="button" class="btn btn-primary button-blauw mt-4 box-shadow--16dp">Get started</button>
+       </article> 
+       <article class="col-md-6">
+            <img class="img-fluid" src="images/plaatje_vindennn.png" alt="plaatje vindennn"/>
+        </article>
+    </section>
+<!-- einde opdracht 1.1-->
+<!-- begin jumbotron-->
+<section class="row item-banner mt-5 d-none d-md-block">  
+    <div class="col-md-12 jumbotron mt-5 item-jumbo">
+	<div class="container">
+	<h1 class="display-5 col-md-12">Heb je een job? Developers zijn er naar op zoek.</h1>
+	<div class="row item-cijfers mt-4">
+	<p class="col-md-3">14000+</p>
+	<p class="col-md-3">60</p>
+	<p class="col-md-3">20</p>
+	<button type="button" class="col-md-3 btn btn-primary button-orange box-shadow--16dp" data-toggle="modal" data-target="#opdracht_plaatsen">Plaats een opdracht </button>
+	</div>
+	<div class="row item-tekst-banner">
+	<p class="col-md-3">Nieuwsbrief volgers</p>
+	<p class="col-md-3">Gemiddelde Job aanmelders</p>
+	<p class="col-md-3">Gemiddelde dagen inhuur</p>
+	</div>    
+  </div></div>
+</section>        
+<!-- einde jumbotron-->
+<!-- begin modal-->
+    <div class="modal" id="opdracht_plaatsen" tabindex="-1" role="dialog" aria-labelleby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header stijl-header">
+        <h5 class="modal-title" id="opdracht_plaatsen_lable">Opdracht plaatsen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    </div>
+
+   <!-- begin formulier-->
+    <section class="modal-body modal-stijlen">
+    <form class="col-md-12" id="form-opdracht-plaatsen" action="#">
+	<div class="form-group">
+    <label for="categorie">Categorie</label>
+    <select class="categorie" id="categorie" required>
+	<option value="none">...</option>
+	<option value="Wordpress">Wordpress</option>
+	<option value="Webshop">Webshop</option>
+	<option value="Websites">Websites</option>
+	<option value="Apps">Apps</option>
+	<option value="Applicaties">Applicaties</option>
+    </select>
+	</div>
+	<div class="form-group">
+	<label for="opdrachtomschrijving">Opdracht</label>
+	<input type="tekst" class="form-control" id="opdracht_omschrijving" placeholder="opdracht" required>
+	</div>
+	<div class="form-group">
+	<label for="opdracht">Opdracht omschrijving</label>
+	<textarea class="form-control" id="opdracht" rows="3" required> </textarea>
+	</div>
+	<div class="form-group">
+	<label for="uren">Omvang in uren</label>
+	<input type="tekst" class="form-control" id="uren" placeholder="verwacht aantal uren" required>
+	</div>
+	<div class="form-group">
+	<label for="einddatum">Datum oplevering</label>
+	<input type="tekst" class="form-control" id="einddatum" placeholder="datum oplevering" required>
+	</div> 
+	<div class="form-group">
+	<label for="email">Contact opnemen met</label>
+	<input type="tekst" class="form-control" id="email" placeholder="contactpersoon" required>
+	</div>           
+	<button type="submit" class="btn btn-primary button-orange box-shadow--16dp mt-3 mb-3 ml-2">Plaatsen</button> 
+	</form>
+	</section>
+	</div>
+	</div>
+<!-- einde modal-->
+<!-- start cards-->
+<section class="row item-opdrachten mt-5 pb-5   justify-content-center align-items-center">
+	<h1 class="col-md-12">Opdrachten <br> per categorie</h1>
+	
+	<article class="card card-body col-12 col-md-5 col-xl-2 mx-3 mt-2 shadow align-items-center ">
+<!-- 		how come align center and not justify-content -->
+	<img class="card-img icon" src="images/logo-wp.png"  alt="logo-wp">
+	<h4 class="card-title mt-4">Wordpress</h4>
+	<h6 class="card-subtitle mb-2 text-muted">156 opdrachten</h6>
+	<a href="#!" class="card-link">Alle opdrachten</a>
+	</article>
+	    
+	<article class="card card-body col-12 col-md-5 col-xl-2 mx-3 mt-2 shadow">
+	<img class="card-img icon" src="images/logo_webshop.png"  alt="logo-webshop">
+	<h4 class="card-title mt-4">Webshops</h4>
+	<h6 class="card-subtitle mb-2 text-muted">367 opdrachten</h6>
+	<a href="#!" class="card-link">Alle opdrachten</a>
+	</article>
+	
+	<article class="card card-body col-12 col-md-5 col-xl-2 mx-3 mt-2 shadow">
+	<img class="card-img icon" src="images/logo-website.png"  alt="logo-websites">
+	<h4 class="card-title mt-4">Websites</h4>
+	<h6 class="card-subtitle mb-2 text-muted">263 opdrachten</h6>
+	<a href="#!" class="card-link">Alle opdrachten</a>
+	</article>
+	    
+	<article class="card card-body col-12 col-md-5 col-xl-2 mx-3 mt-2 shadow">
+	<img class="card-img icon" src="images/logo-apps.png"  alt="logo-Apps">
+	<h4 class="card-title mt-4">Apps</h4>
+	<h6 class="card-subtitle mb-2 text-muted">105 opdrachten</h6>
+	<a href="#!" class="card-link">Alle opdrachten</a>
+	</article>
+	    
+	<article class="card card-body col-12 col-md-5 col-xl-2 mx-3 mt-2 shadow">
+	<img class="card-img icon" src="images/icon-software.png"  alt="logo-Applicaties">
+	<h4 class="card-title mt-4">Applicaties</h4>
+	<h6 class="card-subtitle mb-2 text-muted">50 opdrachten</h6>
+	<a href="#!" class="card-link">Alle opdrachten</a>
+	</article>
+
+</section>
+<!-- begin blockquote/carousel-->
+<section class="row">
+    <blockquote class="blockquote col-md-6  rounded">
+    	<p class="text-black-50">Vindennn is opgericht voor solide business relaties.<br>
+        Vertrouwen en kwaliteit staan hierbij voorop.</p>
+    </blockquote> 
+	<div  class="carousel slide slide col-md-6" data-ride="carousel">
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+		<img class="d-block w-100" src="images/banner_2.png">
+    </div>
+    <div class="carousel-item">
+    	<img class="d-block w-100" src="images/banner_test.png">
+    </div>
+	</div>
+	</div>
+</section>
+<!-- Einde blockquote/carousel-->
+<!-- Begin 6 cards-->
+
+<h1 class="col-md-12 mt-2"> Trending jobs</h1>
+
+<section class="row item-opdrachten mt-2 pb-5 justify-content-center align-items-center">
+	<article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Gemeente Leiden</a>
+        <h4 class="card-title mt-4">App handhavers</h4>
+        <h5 class="card-subtitle mb-2 text-muted">200 uur/tarief: 100+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">1 uur geleden</h6>
+    </article>
+    <article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Huurmij</a>
+        <h4 class="card-title mt-4">Onderhoud website</h4>
+        <h5 class="card-subtitle mb-2 text-muted">100 uur/tarief: 50+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">4 uur geleden</h6>
+    </article>
+    <article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Juwelier de Groot</a>
+        <h4 class="card-title mt-4">Webshop</h4>
+        <h5 class="card-subtitle mb-2 text-muted">1000+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">3 uur geleden</h6>
+    </article>
+
+	<article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Bouwmaat</a>
+        <h4 class="card-title mt-4">Onderhoud App</h4>
+        <h5 class="card-subtitle mb-2 text-muted">20 uur/tarief: 100+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">4 uur geleden</h6>
+    </article>
+    <article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Coolblue</a>
+        <h4 class="card-title mt-4">Onderhoud website</h4>
+        <h5 class="card-subtitle mb-2 text-muted">10 uur/tarief: 50+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">4 uur geleden</h6>
+    </article>
+    <article class="card card-body col-12  col-md-5 col-xl-3 mx-2 mt-1 shadow">
+        <a href="#!" class="card-link">Bol.com</a>
+        <h4 class="card-title mt-4">Fotografie</h4>
+        <h5 class="card-subtitle mb-2 text-muted">8 uur/tarief: 60+</h5>
+        <h6 class="card-subtitle mb-2 text-muted mt-3">8 uur geleden</h6>
+    </article>
+</section>
+<!-- Einde 6 cards-->
+<!-- Begin Jumbotron 2-->
+<section class="row item-banner mt-5 align-items-center d-none d-md-block">  
+    <div class="col-md-12 jumbotron mt-5 item-jumbo2">
+	<div class="container">
+    <h1 class="display-5 col-md-12">Schrijf je in voor onze Nieuwsbrief.</h1>
+    <div class="row kleinetekst mt-4">
+    <p>Nieuws updates, notificaties, job alerts voor job seekers!</p></div>
+	<div class="row form-group mt-4">
+	<input class="form-control col-md-8 mx-3" type="text" placeholder="Default input">
+	<button type="button" class="col-md-3 btn btn-primary button-blue box-shadow--16dp" data-toggle="modal" data-target="#opdracht_plaatsen">Verstuur </button>
+	</div>
+	</div></div>
+</section>  
+<!-- Einde Jumbotron 2-->
+</main>
+    
+<footer class="row col-md-12 mb-5 item-footer">
+	<article class="col-md-3 align-items-center">
+	<div class="row">
+	<div class="item-logo-btm"> <img class="img-fluid mb-3"  src="images/logo_vindennn.png" alt="logo_vindennn" ></div>
+    <h4 style="color: black" class="mt-3">De Juiste oplossing voor remote jobs.</h4></div>
+    
+	<div class="row col-sm-12 col-12 mt-2 justify-content-center align-items-center">
+		<div class="col-3 col-sm-3">
+			<img class="img-fluid" src="images/icon-fb.png" alt="icon-fb" >
+		</div>
+		<div class="col-3">
+			<img class="img-fluid" src="images/icon-ln.png" alt="icon-ln">		
+		</div>
+		<div class="col-3">
+			<img class="img-fluid"  src="images/icon-insta.png" alt="icon-insta" >
+		</div>
+		<div class="col-3">
+			<img class="img-fluid" src="images/icon-whatsapp.png" alt="icon-whatsapp">		 
+		</div>
+	</div>
+	</article>
+	
+      
+<article class="col-md-3 col-12 align-items-center  mt-3 ">
+	<h5 class="text-uppercase ">Job Seekers</h5>
+	<ul class="list-unstyled menu ">
+       <li>
+        <a href="#!">Home</a>
+        </li>
+        <li>
+        <a href="#!">Inloggen</a>
+        </li>
+        <li>
+        <a href="#!">Registeren</a>
+        </li>
+        <li>
+        <a href="#!">Opdrachten</a>
+        </li>
+        </ul>
+</article>
+ <article class="col-md-3 col-12 align-items-center mt-3 ">
+
+	<h5 class="text-uppercase">Job Suppliers</h5>
+        <ul class="list-unstyled menu">
+          <li>
+            <a href="#!">Overzicht</a>
+          </li>
+          <li>
+            <a href="#!">Prijzen</a>
+          </li>
+          <li>
+            <a href="#!">Post a job</a>
+          </li>
+          <li>
+            <a href="#!">Registeren</a>
+          </li>
+        </ul>
+   </article>
+<article class="col-md-3 col-12 align-items-center mt-3 ">
+
+   	<h5 class="text-uppercase">Vindennn</h5>
+        <ul class="list-unstyled menu">
+          <li>
+            <a href="#!">Overzicht</a>
+          </li>
+          <li>
+            <a href="#!">Team</a>
+          </li>
+          <li>
+            <a href="#!">Successen</a>
+          </li>
+          <li>
+            <a href="#!">Pears</a>
+          </li>
+        </ul>
+  </article>
+</footer>
+    <!-- Bootstrap JS koppelen -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+   
+      
+    
